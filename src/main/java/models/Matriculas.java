@@ -1,5 +1,7 @@
 package models;
 
+import java.time.LocalDateTime;
+
 public class Matriculas {
 
     private Long idStudent;
@@ -11,12 +13,12 @@ public class Matriculas {
 
     }
 
-    public Matriculas (Long idStudent, Long idCourse, boolean status, String matriculaDate)
+    public Matriculas (Long idStudent, Long idCourse, boolean status)
     {
         this.idStudent = idStudent;
         this.idCourse = idCourse;
         this.status = status;
-        this.matriculaDate = matriculaDate;
+        this.matriculaDate = LocalDateTime.now().toString();
     }
 
     public Long getIdStudent() {

@@ -66,8 +66,8 @@ public class Main {
         }
         List<Cursos> cursos = new ArrayList<>();
 
-        cursos.add(new Cursos(1L, "INGLÉS", "Inglés desde cero", "Curso básico de inglés", 30, "2026-07-29T23:02:51.841622"));
-        cursos.add(new Cursos(2L, "CÁTEDRA", "Cátedra ser emprendedor", "Curso básico sobre emprender", 26, "2026-07-29T23:02:51.841622"));
+        cursos.add(new Cursos(1L, "INGLÉS", "Inglés desde cero", "Curso básico de inglés", 30));
+        cursos.add(new Cursos(2L, "CÁTEDRA", "Cátedra ser emprendedor", "Curso básico sobre emprender", 26));
 
         System.out.println("\nAssigned courses ");
         for (Cursos curso : cursos) {
@@ -75,9 +75,10 @@ public class Main {
         }
 
         List<Matriculas> matriculas = new ArrayList<>();
-        matriculas.add(new Matriculas(1L, 2L, true, "2026-08-10T19:02:51.841622"));
-        matriculas.add(new Matriculas(2L, 1L, true, "2026-08-10T20:02:51.841622"));
-        matriculas.add(new Matriculas(1L, 1L, false, "2023-08-11T19:02:51.841622"));
+
+        matriculas.add(new Matriculas(1L, 2L, true));
+        matriculas.add(new Matriculas(2L, 1L, true));
+        matriculas.add(new Matriculas(1L, 1L, false));
 
         System.out.println("\nList of enrollments");
         for (Matriculas matricula : matriculas) {
